@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .block-heading {
+            color: #3b99e0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .summary {
+            border-top: 2px solid #5ea4f3;
+            background-color: #f7fbff;
+            padding: 20px;
+        }
+        .summary .btn {
+            background-color: #3b99e0;
+            color: white;
+            border: none;
+        }
+        .product {
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 100%;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="block-heading">
+                    <h1>Shopping Cart</h1>
+                </div>
+                <div class="product">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="image1.jpg" class="img-fluid" alt="Product Image 1">
+                        </div>
+                        <div class="col-6">
+                            <img src="image2.jpg" class="img-fluid" alt="Product Image 2">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="image3.jpg" class="img-fluid" alt="Product Image 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="summary">
+                    <h4>Price Summary</h4>
+                    <p>Total: $100.00</p>
+                    <button class="btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
